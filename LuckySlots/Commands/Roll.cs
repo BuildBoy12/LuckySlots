@@ -5,6 +5,7 @@ namespace LuckySlots.Commands
     using System;
     using static LuckySlots;
     
+    [CommandHandler(typeof(RemoteAdminCommandHandler))]
     public class Roll : ICommand
     {
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
